@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="Minthra.css"> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+  }
+  header{
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b6b1b1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .myntra_home{
+    height: 45px;
+    max-width: 100%;
+  }
+  .logo_container{
+    margin-left: 4%;
+    text-align: center;
+  }
+  .nav_bar{
+    display: flex;
+    min-width: 500px;
+    justify-content: space-evenly;
+  }
+  .nav_bar a{
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 27px 0;
+    border-bottom: 4px solid #ffffff
+  }
+  .nav_bar a sup{
+    color: #ff3f6c;
+    font-size: 10px;
+  }
+  .nav_bar a:hover{
+    border-bottom: 4px solid #f54e77;
+  
+  }
+  
+  
+  .search_bar{
+  height: 40px;
+  min-width: 200px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  }
+  .search_icon{
+    box-sizing: content-box;
+  height: 20px;
+  padding: 10px;
+  
+  background-color: #f5f5f6;
+  color: #282c3f;
+  border-radius: 4px 0 0 4px;
+  }
+  .search_input{
+    color: #696e79;
+    background-color: #f5f5f6;
+    flex-grow: 1;
+    height: 40px;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .action_bar{
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+  }
+  .action_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  
+  /* main section  */
+  
+  
+  .banner_image{
+    max-width: 100%;
+    height: auto;
+  }
+  .banner_container{
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .category_heading{
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+  
+  }
+  .category_items{
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+  .category_items_footer{
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+  }
+  .sale_item{
+    width: 150px;
+  }
+  .footer_container{
+    padding: 30px 0px 40px 0px;
+    background: #fafbfc;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .footer_column{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_column h3{
+    color: #282c3f;
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  .footer_column a{
+    color: #696b79;
+    font-size: 15px;
+    text-align: center;
+  }
+  .copyright{
+    color: #94969f;
+    text-align: center;
+    padding: 15px;
+  }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo_container">
+            <a href="https://www.myntra.com/?src=bc">
+                <img class="myntra_home" src="https://brandlogos.net/wp-content/uploads/2022/03/myntra-logo-brandlogos.net_.png" alt="Myntra Logo">
+            </a>
+        </div>
+        <nav class="nav_bar">
+            <a href="https://www.myntra.com/men?rawQuery=men">Men</a>
+            <a href="https://www.myntra.com/women?rawQuery=women">Women</a>
+            <a href="https://www.myntra.com/shop/kids">kids</a>
+            <a href="https://www.myntra.com/shop/home-living">Home&Living</a>
+            <a href="https://www.myntra.com/bueaty?rawQuery=Bueaty">Beauty</a>
+            <a href="https://www.myntra.com/studio/home">Studio <sup>New</sup></a>
+        </nav>
+        <div class="search_bar"><span class="material-symbols-outlined search_icon">
+                search
+            </span>
+            <input class="search_input" placeholder="search for products, brands and more">
+        </div>
+        <div class="action_bar">
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">
+                    person
+                </span>
+                <span class="action_name">Profile</span>
+            </div>
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">
+                    favorite
+                </span>
+                <span class="action_name">Wishlist</span>
+            </div>
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">
+                    shopping_bag
+                </span>
+                <span class="action_name">Bag</span>
+             
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner_container">
+            <img class="banner_image" src="https://cdn.flipshope.com/blog/wp-content/uploads/2020/01/Myntra-End-Of-Reason-Sale-1536x402.jpg" alt="Main Banner">
+        </div>
+        <div class="category_heading">MEDAL WORTHY BRANDS TO BAG</div>
+        <div class="category_items">
+            <a href="https://thedealapp.in/d/900393-myntra-right-to-fashion-sale-50-to-80-off-start-from-12th-jan-to-18th-jan">
+                <img class="sale_item" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwEqSs1EBp9iqlKm1oQ8h3WNWQdNyo_rlAchZW9y0wdYWGuaH6" alt="image">
+            </a>
+           
+            <a href="https://thedealapp.in/d/900393-myntra-right-to-fashion-sale-50-to-80-off-start-from-12th-jan-to-18th-jan">
+                <img class="sale_item" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4kBi2Kal_NI9qgZnXUuV1bUqGHVMbLKrwarmw9hAC6nwFwZX_" alt="image">
+            </a>
+           
+            <a href="https://thedealapp.in/d/900393-myntra-right-to-fashion-sale-50-to-80-off-start-from-12th-jan-to-18th-jan">
+                <img class="sale_item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbak6Z-Wa2GVyZz5DzUAS8CfpLNr789zjuvjaZkQuXdG3vmCWS" alt="image">
+            </a>
+           
+            <a href="https://thedealapp.in/d/900393-myntra-right-to-fashion-sale-50-to-80-off-start-from-12th-jan-to-18th-jan">
+                <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/81bcb28d-55f3-4d7b-bb5a-7cf7ee7fd8031690773011370-The_Collective.png" alt="The Collective Sale">
+            </a>
+           
+            <a href="https://thedealapp.in/d/900393-myntra-right-to-fashion-sale-50-to-80-off-start-from-12th-jan-to-18th-jan">
+                <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/7aac1f32-1a1a-4ba6-924b-ee1c28553aed1690773011304-Nautica.png" alt="Nautica Sale">
+            </a>
+           
+            <a href="https://thedealapp.in/d/900393-myntra-right-to-fashion-sale-50-to-80-off-start-from-12th-jan-to-18th-jan">
+                <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/6b6c7162-0086-4967-90c8-ec4792ec200c1690773011082-Dorothy_Perkin-_Boohoo.png" alt="Dorothy Perkin Boohoo Sale">
+            </a>
+           
+            <a href="https://thedealapp.in/d/900393-myntra-right-to-fashion-sale-50-to-80-off-start-from-12th-jan-to-18th-jan">
+                <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/0c399e2c-9797-483d-bf6c-0852d5d21db21690773010989-BHPC.png" alt="BHPC Sale">
+            </a>
+           
+            <a href="https://your-destination-url.com"> <!-- Replace with your desired URL -->
+                <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/d521c019-8fcd-4f36-a56f-7a1b9095e2661690773010958-Antony_Morato.png" alt="Antony Morato Sale">
+            </a>
+           
+            <a href="https://your-destination-url.com"> <!-- Replace with your desired URL -->
+                <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/92d5e2ec-a736-4bfd-832b-6972121829c91690773010945-Aldo.png" alt="Shop By Category">
+            </a>
+           
+            <a href="https://your-destination-url.com"> <!-- Replace with your desired URL -->
+                <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/437645a4-988c-4f53-aff3-b1fdb34938481690773011106-FCUK.png" alt="Dorothy Perkin Boohoo">
+            </a>
+           
+            <a href="https://your-destination-url.com"> <!-- Replace with your desired URL -->
+                <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/2/9699db4e-8162-406a-85ba-e92116f0019f1690955825591-image_png2047004151.png" alt="Sale Image">
+            </a>
+           
+            <a href="https://your-destination-url.com"> <!-- Replace with your desired URL -->
+                <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/d400d2ce-5755-4c86-96b8-26899aea6ea61690773011130-GANT.png" alt="Sale Image">
+            </a>
+           
+        </div>
+        <div class="category_heading">SHOP BY CATEGORY</div>
+        <div class="category_items">
+            <a href="https://www.myntra.com/wsa-all-new?rf=Discount+Range%3A30.0_100.0_30.0+TO+100.0&wdu=thedea1app.in&fywh=1725392078988&utm_source=admitad&utm_medium=affiliate&utm_campaign=605158_c6efbd9ddeb1b4baf4126dec3a5b8cdb&admitad_uid=c6efbd9ddeb1b4baf4126dec3a5b8cdb&tagtag_uid=c6efbd9ddeb1b4baf4126dec3a5b8cdb"> <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/3a804edc-ce57-4eb5-bb6a-493d458973661690787338896-Shop-By-Category_HP-4_07.jpg" alt="image"></a>
+            <a href="https://www.myntra.com/men-ethnic-wear?plaEnabled=false&rhue=1725392215576&rf=Discount+Range%3A50.0_100.0_50.0+TO+100.0&llc=thedea1app&utm_source=admitad&utm_medium=affiliate&utm_campaign=605158_4fad29a4b189beb6511e9b00ff045a66&admitad_uid=4fad29a4b189beb6511e9b00ff045a66&tagtag_uid=4fad29a4b189beb6511e9b00ff045a66"> <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/54852b61-90d6-484a-84c9-a8560247ffc21690787339307-Shop-By-Category_HP-4_19.jpg" alt="image"></a>
+            <a href="https://www.myntra.com/wsa-all-new?rf=Discount+Range%3A30.0_100.0_30.0+TO+100.0&koio=1725392147337&oec=thedea1app&utm_source=admitad&utm_medium=affiliate&utm_campaign=605158_02d2a69c3a2361df020235d566212149&admitad_uid=02d2a69c3a2361df020235d566212149&tagtag_uid=02d2a69c3a2361df020235d566212149"> <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/c61cfcfb-749f-4d8e-a318-0ea8f8705a1c1690787339442-Shop-By-Category_HP-4_04.jpg" alt="image"></a>
+            <a href="https://www.myntra.com/wsa-all-new?rf=Discount+Range%3A30.0_100.0_30.0+TO+100.0&wdu=thedea1app.in&fywh=1725392078988&utm_source=admitad&utm_medium=affiliate&utm_campaign=605158_2d0c51d0b85b9c6c99e42353628cbe2b&admitad_uid=2d0c51d0b85b9c6c99e42353628cbe2b&tagtag_uid=2d0c51d0b85b9c6c99e42353628cbe2b"> <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/a50c2dec-c5bc-46f3-b754-294fb46c61971690787339077-Shop-By-Category_HP-4_05.jpg" alt="image"></a>
+            <a href="https://www.myntra.com/watches?rf=Discount+Range%3A10.0_100.0_10.0+TO+100.0&xfa=thedea1app.in&pris=1725392039242&utm_source=admitad&utm_medium=affiliate&utm_campaign=605158_f2a797eaf1218c37def9500e1afb579c&admitad_uid=f2a797eaf1218c37def9500e1afb579c&tagtag_uid=f2a797eaf1218c37def9500e1afb579c"> <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/dd262b36-3a75-464a-97b5-235984080d851690787338916-Shop-By-Category_HP-4_11.jpg" alt="image"></a>
+            <a href="https://www.myntra.com/home-furnishing-menu?plaEnabled=false&qim=bydealapp&rf=Discount+Range%3A40.0_100.0_40.0+TO+100.0&znve=1725391959312&utm_source=admitad&utm_medium=affiliate&utm_campaign=605158_ed9425f9816a46898809fcc980bdc3d4&admitad_uid=ed9425f9816a46898809fcc980bdc3d4&tagtag_uid=ed9425f9816a46898809fcc980bdc3d4"> <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/5d78afb6-38bb-43bd-bc67-1e4f6026b6ae1690787339327-Shop-By-Category_HP-4_20.jpg" alt="image"></a>
+            <a href="https://www.myntra.com/women-jewellery?rf=Discount+Range%3A10.0_100.0_10.0+TO+100.0&pyt=thedea1app&vwcd=1725391907300&utm_source=admitad&utm_medium=affiliate&utm_campaign=605158_b6bc0094a92732faabb796e13a2ebdd1&admitad_uid=b6bc0094a92732faabb796e13a2ebdd1&tagtag_uid=b6bc0094a92732faabb796e13a2ebdd1"> <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/66882f76-0bbe-4741-8890-0426695e09131690787339238-Shop-By-Category_HP-4_23.jpg" alt="image"></a>
+            <a href="https://www.myntra.com/grooming?f=Brand%3ABeardhood%2CBombay+Shaving+Company%2CFoolzy%2CTHE+MAN+COMPANY%2CUstraa&gto=thedea1app.in&lgxy=1725391861369&rf=Discount+Range%3A10.0_100.0_10.0+TO+100.0&utm_source=admitad&utm_medium=affiliate&utm_campaign=605158_171c4d779fa76cf7f7c53e2ea0c42aa4&admitad_uid=171c4d779fa76cf7f7c53e2ea0c42aa4&tagtag_uid=171c4d779fa76cf7f7c53e2ea0c42aa4"> <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/dd3d6118-cd57-4e73-a4a4-e7f8a6bfde7b1690787339093-Shop-By-Category_HP-4_13.jpg" alt="image"></a>
+            <a href="https://www.myntra.com/men-accessories?f=Categories%3ABelts%2CWallets&plaEnabled=false&rf=Discount+Range%3A40.0_100.0_40.0+TO+100.0&gqii=1725391766422&vkq=bydealapp&utm_source=admitad&utm_medium=affiliate&utm_campaign=605158_c0f57a1f9ee3a6188a72009f70705dfc&admitad_uid=c0f57a1f9ee3a6188a72009f70705dfc&tagtag_uid=c0f57a1f9ee3a6188a72009f70705dfc"> <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/278917b5-1658-4c2c-b122-f623b1d909701690787339290-Shop-By-Category_HP-4_17.jpg" alt="image"></a>
+            
+            </div>
+        <div class="category_items_footer">
+            <a href="https://www.myntra.com/gadgets?f=Categories%3AHeadphones%2CSpeakers&iofg=1725391709139&tbt=dea1app.in&rf=Discount+Range%3A10.0_100.0_10.0+TO+100.0&utm_source=admitad&utm_medium=affiliate&utm_campaign=605158_171169ced1557fe3c66f568e02e7615a&admitad_uid=171169ced1557fe3c66f568e02e7615a&tagtag_uid=171169ced1557fe3c66f568e02e7615a"> <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/e4fcb9f0-f79a-41b7-b7b2-8828bb6e95e61690787339426-Shop-By-Category_HP-4_22.jpg" alt="image"></a>
+            <a href="https://www.myntra.com/womens-western-wear?f=Categories%3ABlazers%2CCoats%2CJumpsuit%2CShrug%2CTrousers%2CWaistcoat&gwvr=1725391656845&plaEnabled=false&rf=Discount+Range%3A40.0_100.0_40.0+TO+100.0&uis=dea1app&utm_source=admitad&utm_medium=affiliate&utm_campaign=605158_866feb604bc467608e358afdf79d5736&admitad_uid=866feb604bc467608e358afdf79d5736&tagtag_uid=866feb604bc467608e358afdf79d5736"> <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/76932333-b792-4f54-983c-45aaf70e04ef1690787338936-Shop-By-Category_HP-4_28.jpg" alt="image"></a>
+            <a href="https://www.myntra.com/eyewear?f=Gender%3Amen%2Cmen+women&rf=Discount+Range%3A80.0_100.0_80.0+TO+100.0&gtb=dea1app.in&ivwv=1725391588145&utm_source=admitad&utm_medium=affiliate&utm_campaign=605158_e43a8e56a5ae3c00ef7822a531da3b2b&admitad_uid=e43a8e56a5ae3c00ef7822a531da3b2b&tagtag_uid=e43a8e56a5ae3c00ef7822a531da3b2b"> <img class="sale_item" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/a351ad62-c1d1-4bb4-9967-d3966f8446521690787338974-Shop-By-Category_HP-4_29.jpg" alt="image"></a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_container">.
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+                <a href="https://www.myntra.com/men?rawQuery=men">Men</a>
+                <a href="https://www.myntra.com/women?rawQuery=women">Women</a>
+                <a href="https://www.myntra.com/kid?rawQuery=kid">kids</a>
+                <a href="https://www.myntra.com/home-and-living?rawQuery=home%20and%20living">Home&Living</a>
+                <a href="https://www.myntra.com/bueaty?rawQuery=Bueaty">Beauty</a>
+                <a href="https://www.myntra.com/gift-card?rawQuery=gift%20card">Gift Card</a>
+                <a href="https://www.myntra.com/myntra-insider?rawQuery=Myntra%20Insider">Myntra Insider</a>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            &copy 2024 www.myntra.com. All right reserved.
+        </div>
+    </footer>
+
+ 
+</body>
+
+</html>
