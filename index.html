@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            object-fit: cover;
+        }
+        .rating i {
+            color: #ffdd00;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                </ul>
+                <form class="d-flex w-50 me-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search for products" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-warning me-2">Cart (0)</a>
+                    <a href="#" class="btn btn-light"><i class="fas fa-user"></i> Profile</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://m.media-amazon.com/images/I/71GqQVYn8kL._SX3000_.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://m.media-amazon.com/images/I/61KW779vVNL._SX3000_.jpg" class="d-block w-100" >
+                </div>
+                <div class="carousel-item">
+                    <img src="https://m.media-amazon.com/images/I/71b-DYyNcDL._SX3000_.jpg" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="mb-4">Featured Products</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$19.99 <span class="badge bg-success">20% Off</span></p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="card-text mt-2">Short description of the product. High-quality material with great features.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel1">Product 1 - Detailed Info</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://via.placeholder.com/500x300" class="img-fluid mb-3" alt="Product 1">
+                            <p>More detailed information about the product. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat nulla sed nisi feugiat lobortis.</p>
+                            <p><strong>Price:</strong> $19.99 <span class="badge bg-success">20% Off</span></p>
+                            <p><strong>Ratings:</strong> 4.5/5</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$19.99 <span class="badge bg-success">20% Off</span></p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="card-text mt-2">Short description of the product. High-quality material with great features.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel1">Product 1 - Detailed Info</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://via.placeholder.com/500x300" class="img-fluid mb-3" alt="Product 2">
+                            <p>More detailed information about the product. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat nulla sed nisi feugiat lobortis.</p>
+                            <p><strong>Price:</strong> $19.99 <span class="badge bg-success">20% Off</span></p>
+                            <p><strong>Ratings:</strong> 4.5/5</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$19.99 <span class="badge bg-success">20% Off</span></p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="card-text mt-2">Short description of the product. High-quality material with great features.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel1">Product 1 - Detailed Info</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://via.placeholder.com/500x300" class="img-fluid mb-3" alt="Product 3">
+                            <p>More detailed information about the product. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat nulla sed nisi feugiat lobortis.</p>
+                            <p><strong>Price:</strong> $19.99 <span class="badge bg-success">20% Off</span></p>
+                            <p><strong>Ratings:</strong> 4.5/5</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+<footer class="bg-dark text-light mt-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <h5>About Amazon</h5>
+                <p>Amazon is a global leader in e-commerce, providing customers with a wide variety of products, competitive pricing, and a user-friendly shopping experience.</p>
+                <a href="#" class="text-light">Learn More</a>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Customer Service</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Help & FAQs</a></li>
+                    <li><a href="#" class="text-light">Returns & Refunds</a></li>
+                    <li><a href="#" class="text-light">Shipping Information</a></li>
+                    <li><a href="#" class="text-light">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Policies & Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Privacy Policy</a></li>
+                    <li><a href="#" class="text-light">Terms of Service</a></li>
+                    <li><a href="#" class="text-light">Cookies Policy</a></li>
+                    <li><a href="#" class="text-light">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Follow Us</h5>
+                <ul class="list-unstyled d-flex">
+                    <li><a href="#" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="#" class="text-light me-3"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li><a href="#" class="text-light me-3"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                </ul>
+                <p class="mt-2">Stay updated on new offers, promotions, and more by following us on social media.</p>
+            </div>
+        </div>
+
+        <hr class="border-light">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 Amazon Clone. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-light me-3">Site Map</a>
+                <a href="#" class="text-light me-3">Affiliate Program</a>
+                <a href="#" class="text-light">Advertise with Us</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        fetch('https://fakestoreapi.com/products')
+            .then(response => response.json())
+            .then(products => {
+                const productContainer = document.querySelector('.row.row-cols-md-4.g-4'); 
+
+                productContainer.innerHTML = '';
+                products.forEach(product => {
+                    const productCard = `
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="${product.image}" class="card-img-top" alt="${product.title}" style="height: 200px; object-fit: contain;">
+                                <div class="card-body">
+                                    <h5 class="card-title">${product.title}</h5>
+                                    <p class="card-text">$${product.price.toFixed(2)}</p>
+                                    <div class="rating">
+                                        ${getRatingStars(product.rating.rate)} 
+                                    </div>
+                                    <p class="card-text mt-2">${product.description.substring(0, 100)}...</p>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal${product.id}">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Modal for detailed product info -->
+                        <div class="modal fade" id="productModal${product.id}" tabindex="-1" aria-labelledby="productModalLabel${product.id}" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel${product.id}">${product.title} - Detailed Info</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="${product.image}" class="img-fluid mb-3" alt="${product.title}">
+                                        <p>${product.description}</p>
+                                        <p><strong>Price:</strong> $${product.price.toFixed(2)}</p>
+                                        <p><strong>Ratings:</strong> ${product.rating.rate} / 5 (${product.rating.count} reviews)</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    productContainer.innerHTML += productCard;
+                });
+            })
+            .catch(error => console.error('Error fetching products:', error));
+        function getRatingStars(rating) {
+            let stars = '';
+            for (let i = 1; i <= 5; i++) {
+                if (i <= rating) {
+                    stars += '<i class="fas fa-star"></i>';
+                } else if (i - rating < 1) {
+                    stars += '<i class="fas fa-star-half-alt"></i>';
+                } else {
+                    stars += '<i class="far fa-star"></i>';
+                }
+            }
+            return stars;
+        }
+        </script>        
+</body>
+</html>
